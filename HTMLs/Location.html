@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location</title>
+    <link rel="stylesheet" href="../CSSs/Location.css" />
+  </head>
+
+  <body>
+    <!-- IMAGE SECTION -->
+    <div class="hero-img">
+      <!-- اینجا عکس خودت را می‌گذاری -->
+      <img src="../images/LocationBGimg.webp" alt="restaurant" />
+    </div>
+
+    <!-- MAIN OVERLAY -->
+    <div class="overlay">
+      <h1>Our Locations</h1>
+
+      <div class="locations">
+        <div class="location" onclick="toggleAddress(this)">
+          📍 Downtown Branch
+          <p class="address">Street 12, Downtown District, City Center</p>
+        </div>
+
+        <div class="location" onclick="toggleAddress(this)">
+          📍 West Side Branch
+          <p class="address">West Avenue, Building 5, Near Mall</p>
+        </div>
+
+        <div class="location" onclick="toggleAddress(this)">
+          📍 Airport Branch
+          <p class="address">Airport Road, Terminal 2 Area</p>
+        </div>
+
+        <div class="location" onclick="toggleAddress(this)">
+          📍 City Garden Branch
+          <p class="address">Garden Street, Near Park Entrance</p>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="../JSs/Location.js"></script>
+  </body>
+</html>

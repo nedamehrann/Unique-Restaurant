@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../CSSs/Menu.css" />
+  </head>
+
+  <body>
+    <div class="overlay">
+      <!-- CATEGORIES -->
+      <div class="panel active" id="categories">
+        <h1>Our Menu</h1>
+
+        <button onclick="showMenu('breakfast')">Breakfast</button>
+        <button onclick="showMenu('lunch and dinner')">Lunch and Dinner</button>
+        <button onclick="showMenu('dessert')">Dessert</button>
+        <button onclick="showMenu('drinks')">Drinks</button>
+      </div>
+
+      <!-- MENU ITEMS -->
+      <div class="panel" id="menuItems">
+        <button class="back" onclick="backToCategories()">← Back</button>
+
+        <div id="content"></div>
+
+        <!-- CART -->
+        <div class="cart">
+          <h3>Cart</h3>
+
+          <div id="cartItems"></div>
+
+          <p>Total: $<span id="total">0</span></p>
+
+          <!-- NEW BUTTON -->
+          <button id="orderBtn">Place Order</button>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <h2>Success!</h2>
+            <p>Your order has been placed successfully.</p>
+
+            <button id="okBtn">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="../JSs/Menu.js"></script>
+  </body>
+</html>

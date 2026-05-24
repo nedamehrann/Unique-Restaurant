@@ -1,0 +1,21 @@
+{
+  "breakfast": [
+    { "name": "English Breakfast", "price": 30 },
+    { "name": "Italin Breakfast", "price": 32 },
+    { "name": "Turkish Breakfast", "price": 28 }
+  ],
+  "lunch and dinner": [
+    { "name": "Steak", "price": 40 },
+    { "name": "Pizza", "price": 25 },
+    { "name": "Chicken", "price": 34 },
+    { "name": "Sushi", "price": 23 }
+  ],
+  "dessert": [
+    { "name": "Chocolate Cake", "price": 6 },
+    { "name": "Ice Cream", "price": 4 }
+  ],
+  "drinks": [
+    { "name": "Champagne", "price": 30 },
+    { "name": "Juice", "price": 12 }
+  ]
+}

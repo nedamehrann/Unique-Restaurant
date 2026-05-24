@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css?family=Arima);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arima", cursive;
+}
+
+body {
+  color: white;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to left, #000000 0%, #ffffff 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: orange;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: red;
+}
+
+.menu-icon {
+  display: block;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background-image: url(../images/mainPageBGimg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  color: orange;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #fff;
+  max-width: 700px;
+  font-size: 25px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: orange;
+}
+
+/* CARDS */
+.card-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 1px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 98%;
+  min-height: 500px;
+  background-image: linear-gradient(
+    to right,
+    rgba(225, 0, 0, 0.7) 0%,
+    rgba(225, 102, 0, 0.7) 100%
+  );
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  gap: 60px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.cardSectionDiv{
+  max-width: 400px;
+}
+
+.cardSectionDiv img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cardSectionDivP{
+  max-width: 300px;
+}
+
+.cardSectionDivP a{
+  color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: orange;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: red;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: black;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* BACKGROUND OVERLAY MENU */
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(../images/menuBGimg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+}
+
+/* وقتی فعال شود */
+.overlay-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* لینک‌ها */
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.menu-links a {
+  font-size: 45px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-links a:hover {
+  color: orange;
+  transform: scale(1.1);
+}
+
+/* دکمه بستن */
+.close-btn {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  font-size: 50px;
+  color: red;
+  cursor: pointer;
+}

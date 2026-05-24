@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <link rel="stylesheet" href="../CSSs/Reservation.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Table Reservation</h1>
+
+      <form id="reservationForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <input type="date" id="time" required />
+
+        <textarea
+          id="message"
+          placeholder="Additional Notes (optional)"
+        ></textarea>
+
+        <button type="submit">Reserve Now</button>
+      </form>
+
+      <!-- MODAL -->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <h2>Success!</h2>
+          <p>Your table has been successfully reserved.</p>
+          <button id="closeModal">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER LINKS -->
+    <footer>
+      <div class="links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Manage Cookies</a>
+      </div>
+    </footer>
+
+    <script defer src="../JSs/Resevation.js"></script>
+  </body>
+</html>
